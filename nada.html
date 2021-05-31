@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang=“pt-br”>
+<head>
+<title>Curso de CSS</title>
+<meta charset=“UTF-8”>
+<style type="text/css">
+.menudd{
+position:relative;
+display:inline-block;
+}
+.menuBtn{
+background-color:#800;
+color:white;
+padding:20px;
+font-size:20px;
+border:none;
+cursor:pointer;
+}
+.menuConteudo{
+position:absolute;
+background-color:#EEE;
+min-width:160px;
+box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.menuConteudo a{
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display: block;
+font-size:20px;
+}
+.menuConteudo a:hover{
+background-color:#FDD;
+color:#800;
+}
+.menudd:hover .menuConteudo{
+display: block;
+}
+.menudd:hover .menuBtn{
+background-color:black;
+}
+
+
+.pontinho{
+	position: relative;
+	left: 200px;
+	top: 200px;
+	border: none;
+	width: 120px;
+}
+
+.botao{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+
+.conteudo{
+	height: 5px;
+	width: 5px;
+	position: absolute;
+	background-color: #DDD;
+	overflow: hidden;
+	transition: height 0.7s 1s , width 0.8s;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.conteudo:hover{
+	background-color: pink;
+}
+.pontinho:hover .conteudo{
+	display: block;
+	height: 50px;
+	width: 80px;
+
+}
+.conteudo a{
+	position: relative;
+	display: block;
+	padding: 4px 6px;
+	text-decoration: none;
+	top: 2px;
+	left:-2px;
+	transition: top 0.2s 0.2s, left 0.3s;
+}
+.conteudo a:hover{
+	left: 2px;
+	top: -2px;
+	background-color: red;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="menudd">
+<button class="menuBtn">Canal Fessor Bruno</button>
+<div class="menuConteudo">
+<a href="">Home</a>
+<a href="">Apostilas</a>
+<a href="">Canal Youtube</a>
+</div>
+</div>
+<div class="menudd">
+<button class="menuBtn">Google</button>
+<div class="menuConteudo">
+<a href="">Google</a>
+<a href="">Youtube</a>
+
+
+</div>
+</div>
+
+<div class="pontinho">
+	<button class="botao">|||</button>
+	<div class="conteudo">
+		<a href="">teste</a>
+		<a href="">teste2</a>
+	</div>
+</div>
+</body>
+</html>
